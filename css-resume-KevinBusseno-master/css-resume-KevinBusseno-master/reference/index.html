@@ -1,168 +1,165 @@
-<!doctype html>
-<html lang="en"></html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="This is an example resume.">
-    <meta name="keywords" content="resume, jobs, career">
-    <title>John Doe Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        /* Setting general body properties and applying the golden ratio for line-height */
-        body {
-            font-family: 'Helvetica', Arial;
-            margin: 0;
-            background-image: url('sky.jpg');
-            background-size: cover;
-            color: #000000;
-            font-size: 16px; /* Base font size */
-            line-height: 1.618; /* Line height following the golden ratio */
-        }
-
-        /* Applying the golden ratio for heading sizes */
-        h1 {
-            font-size: 2.618em; /* Font size following the golden ratio */
-
-        }
-        h2:after {
-            font-size: 1.618em; /* Font size following the golden ratio */
-            content:' ';
-            display:block;
-            border:2px solid #d0d0d0;
-            border-radius:4px;
-            -webkit-border-radius:4px;
-            -moz-border-radius:4px;
-            box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
-            -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
-            -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
-        }
-        h3 {
-            font-size: 1em; /* Font size following the golden ratio */
-        }
-
-        /* Setting properties of the container and applying the golden ratio for width and padding */
-        .container {
-            width: 61.8%; /* Width following the golden ratio */
-            max-width: 1600px; /* Max-width for larger screens */
-            margin: 0 auto;
-            background-color: rgb(245,245,245);
-            opacity: .85;
-            padding: 1.618% 2.618%; /* Padding following the golden ratio */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            margin-top: 40px;
-            margin-bottom: 40px;
-            border-radius: 25px;
-        }
-
-        /* Setting properties for header, main and footer sections */
-        header, main, footer {
-            padding: 0.618; /* Padding following the golden ratio */
-        }
-        
-       .tagline{
-            font-size: 1.618em;
-            color: #000000;
-            font-family: 'Helvetica', Arial;
-       }
-
-        p, li {
-            color: #000000;
-        }
-
-        /* Setting properties for links and applying the golden ratio for padding */
-        a {
-            color: #000000;
-            text-decoration: none;
-            padding: 0.618em 1em; /* Padding following the golden ratio */
-        }
-
-        /* Setting hover color for links */
-        a:hover {
-            color: #0077cc;
-        }
-
-        /* Styling for unordered lists */
-        ul {
-            list-style-type: none; 
-        }
-        
-        .skills{
-            column-count: 6;
-        }
-        
-        /* Styling for list items */
-        li:before {
-            content: "•"; /* Insert content that looks like bullets */
-            padding-right: 8px;
-            color: #000000;
-        }
-    
-        /* Styling for social links and applying the golden ratio for width */
-        .social-links {
-            display: flex;
-            justify-content: space-between;
-            width: 38.2%; /* Width following the golden ratio */
-            margin: 0 auto;
-        }
-
-        .personal-data{
-            display: flex;
-            justify-content: space-between;
-            width: 75%; /* Width following the golden ratio */
-            margin: 0 auto;
-        }
-        /* Style for the navigation menu */
-        nav ul {
-            list-style: none; 
-            text-align: center;
-            font-size: 30px;
-        }
-
-        nav li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav a {
-            color: black;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-        
-        
-        /* Print Styles */
-        @media print {
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is an example resume.">
+        <meta name="keywords" content="resume, jobs, career">
+        <title>John Doe Resume</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+        <style>
+            /* Setting general body properties and applying the golden ratio for line-height */
             body {
-                background-image: none;
-                color: black;
+                font-family: 'Helvetica', Arial;
+                margin: 0;
+                background-image: url('sky.jpg');
+                background-size: cover;
+                color: #000000;
+                font-size: 16px; /* Base font size */
+                line-height: 1.618; /* Line height following the golden ratio */
             }
+    
+            /* Applying the golden ratio for heading sizes */
+            h1 {
+                font-size: 2.618em; /* Font size following the golden ratio */
+    
+            }
+            h2:after {
+                font-size: 1.618em; /* Font size following the golden ratio */
+                content:' ';
+                display:block;
+                border:2px solid #d0d0d0;
+                border-radius:4px;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+                -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+                -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+            }
+            h3 {
+                font-size: 1em; /* Font size following the golden ratio */
+            }
+    
+            /* Setting properties of the container and applying the golden ratio for width and padding */
             .container {
-                box-shadow: none;
+                width: 61.8%; /* Width following the golden ratio */
+                max-width: 1600px; /* Max-width for larger screens */
+                margin: 0 auto;
+                background-color: rgb(245,245,245);
+                opacity: .85;
+                padding: 1.618% 2.618%; /* Padding following the golden ratio */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                margin-top: 40px;
+                margin-bottom: 40px;
+                border-radius: 25px;
             }
+    
+            /* Setting properties for header, main and footer sections */
+            header, main, footer {
+                padding: 0.618; /* Padding following the golden ratio */
+            }
+            
+           .tagline{
+                font-size: 1.618em;
+                color: #000000;
+                font-family: 'Helvetica', Arial;
+           }
+    
+            p, li {
+                color: #000000;
+            }
+    
+            /* Setting properties for links and applying the golden ratio for padding */
             a {
+                color: #000000;
+                text-decoration: none;
+                padding: 0.618em 1em; /* Padding following the golden ratio */
+            }
+    
+            /* Setting hover color for links */
+            a:hover {
+                color: #0077cc;
+            }
+    
+            /* Styling for unordered lists */
+            ul {
+                list-style-type: none; 
+            }
+            
+            .skills{
+                column-count: 6;
+            }
+            
+            /* Styling for list items */
+            li:before {
+                content: "•"; /* Insert content that looks like bullets */
+                padding-right: 8px;
+                color: #000000;
+            }
+        
+            /* Styling for social links and applying the golden ratio for width */
+            .social-links {
+                display: flex;
+                justify-content: space-between;
+                width: 38.2%; /* Width following the golden ratio */
+                margin: 0 auto;
+            }
+    
+            .personal-data{
+                display: flex;
+                justify-content: space-between;
+                width: 75%; /* Width following the golden ratio */
+                margin: 0 auto;
+            }
+            /* Style for the navigation menu */
+            nav ul {
+                list-style: none; 
+                text-align: center;
+                font-size: 30px;
+            }
+    
+            nav li {
+                display: inline;
+                margin-right: 20px;
+            }
+    
+            nav a {
                 color: black;
+                text-decoration: none;
+            }
+    
+            nav a:hover {
                 text-decoration: underline;
             }
-            a[href^="mailto:"]:after {
-                content: " (" attr(href) ")";
+            
+            
+            /* Print Styles */
+            @media print {
+                body {
+                    background-image: none;
+                    color: black;
+                }
+                .container {
+                    box-shadow: none;
+                }
+                a {
+                    color: black;
+                    text-decoration: underline;
+                }
+                a[href^="mailto:"]:after {
+                    content: " (" attr(href) ")";
+                }
+                a[href^="tel:"]:after {
+                    content: " (" attr(href) ")";
+                }
+                .print-link {
+                    display: none;
+                }
             }
-            a[href^="tel:"]:after {
-                content: " (" attr(href) ")";
-            }
-            .print-link {
-                display: none;
-            }
-        }
-    </style>
-</head>
+        </style>
+    </head>
 
-<meta name="description" content="Our first page">
-<meta name="keywords" content="html tutorial template">
-</head>
+
 <body>
     <header>
         <nav>
@@ -173,98 +170,27 @@
                 <li><a href="privacy_policy.html">Privacy Policy</a></li>
             </ul>
         </nav>
-    </header>   
-    <div class="container">
-        <header> <!-- The 'header' element represents a container for introductory content or a set of navigational links -->
-            <h1>John Doe</h1> <!-- 'h1' is a heading tag. Numbers 1-6 can be used, with 'h1' being the highest level -->
-            <div class= "tagline">
-                <p>Detail-oriented and self-motivated IT professional seeking a postition as a backend developer.</p>
-            </div>
-        </header>
-    
-        <main>
-            <section>
-                <h2>Objective</h2>
-                <p>Experienced software engineer with a passion for coding. Looking to expand my career and knowledge through hardwork and opportunities in the world of technology.</p>
-            </section>
-            
-            <section>
-                <h2>Education</h2>
-                <article>
-                    <h3>B.S in Business and Information Systems</h3>
-                    <p>University of Example, 2020-2024</p>
-                </article>
-            </section>
-        
-            <section>
-                <h2>Experience</h2>
-                <article>
-                    <h3>Backend Developer</h3> <!--Fourth Job-->
-                        <p>Vertical Web in Houston TX, 2022-Now</p>
-                            <ul>
-                                <li>Managed multiple websites using Wordpress</li>
-                                <li>Self made python scripts to assist customers needs</li>
-                            </ul>
+    </header>
+    <div class="container">   
+        <div class="hero" style="font-size: 20px;">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Exploring the world of robotics and coding.</p>
+        </div>
 
-                    <h3>Founder & CEO</h3> <!--First Job-->
-                        <p>Frontier Education NJ, 2019-2022</p>
-                            <ul>
-                                <li>Successfully advertised and marketed to parents in the local areas</li>
-                                <li>Set up a four week curriculum for students grades 2+</li>
-                            </ul>
-                    
-                    <h3>Director of TechZone</h3> <!--Second Job-->
-                        <p>Spring Lake Day Camp, Summer 2018 & 2019</p>
-                            <ul>
-                                <li>Created a curriculum using robotics kits for ages 5-18 </li>
-                                <li>Managed employees and created a yearly budget</li>
-                            </ul>
+        <div id="bio" style="padding: 50px; background-color: #f4f4f4;">
+            <h2>About Me</h2>
+            <p>Embarking on a journey to forge a career in coding, this individual is driven by an insatiable curiosity for the world of technology and its limitless possibilities. Guided by a passion for problem-solving and a keen eye for detail, they embrace the art of translating ideas into elegant lines of code. With each challenge conquered, they find themselves not just unraveling the intricacies of programming languages, but also unraveling their own potential. Armed with a tenacious spirit, they eagerly embrace the ever-evolving landscape of software development, tirelessly learning and adapting to stay at the forefront of innovation. As they tread this path, they remain fueled by the excitement of creating digital solutions that can shape the way we interact with the world, all while steadfastly building the foundation of a promising coding career.</p>
+        </div>
 
-                <h2>Leadership Endeavors</h2>
-                    <div class="Leadership Roles">
-                        <h3>Captain of Robotics Team 223</h3> <!--Fifth Job-->
-                            <p>FIRST Robotics Competition, May 2015 - June 2017</p>
-                                <ul>
-                                    <li>Created multiple robots to compete against other schools and companies such as Google, Intel, and NASA</li>
-                                    <li>BattleBots Prototype Team awarded $10,000 and won the tournament</li>
-                                    <li>Mentored students in design, machining, and business</li>
-                                </ul>
-                        <h3>Founder & President</h3> <!--Third Job-->
-                            <p>Rowan University Robotics Club, October 2017 - June 2019</p>
-                                <ul>
-                                    <li>Started multiple robotics programs for K-12 around Rowan University </li>
-                                    <li>Acquired over 40+ members into the program</li>
-                                    <li>Directed multiple robotics events hosted at the schools</li>
-                                    <li>Set up multiple fundraising events for the club to gain exposure and funding</li>
-                                </ul>    
-                    </div>
-                <h2>Skills</h2>
-                    <div class="skills">
-                            <ul>
-                                <li>SolidWorks</li>
-                                <li>Inventor</li>
-                                <li>Fusion 360</li>
-                                <li>Java</li>
-                                <li>Python</li>
-                                <li>PHP</li>
-                                <li>G-Code</li>
-                                <li>MS Office</li>
-                                <li>PowerPoint</li>
-                                <li>Excel</li>
-                                <li>Access</li>
-                                <li>AutoCAD</li>
-                                <li>Docs</li>
-                                <li>Gmail</li>
-                                <li>Drive</li>
-                                <li>Sheets</li>
-                                <li>HTML</li>
-                                <li>Wordpress</li>
-                            </ul>
-                    </div>
-                </article>
-            </section>
-        </main>
-        
+        <div id="contact" style="padding: 50px;">
+            <h2>Contact Me</h2>
+            <p>If you're interested in discussing projects, collaborating, or just want to say hello, feel free to get in touch. Sign up with your email to stay updated on my latest endeavors.</p>
+            <form action="MAILCHIMP_SIGNUP_URL" method="post"> <!-- Replace with your Mailchimp signup form URL -->
+                <input type="email" name="EMAIL" placeholder="Your Email" required>
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+
         <footer>
             <div class="personal-data">
                 <p>John Doe © 2023</p>
@@ -280,6 +206,5 @@
             </div>
         </footer>
     </div>
-
 </body>
 </html>
