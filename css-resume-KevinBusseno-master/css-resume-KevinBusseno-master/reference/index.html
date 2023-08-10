@@ -112,6 +112,26 @@
             width: 75%; /* Width following the golden ratio */
             margin: 0 auto;
         }
+        /* Style for the navigation menu */
+        nav ul {
+            list-style: none; 
+            text-align: center;
+            font-size: 30px;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
         
         
         /* Print Styles */
@@ -144,6 +164,16 @@
 <meta name="keywords" content="html tutorial template">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>   
     <div class="container">
         <header> <!-- The 'header' element represents a container for introductory content or a set of navigational links -->
             <h1>John Doe</h1> <!-- 'h1' is a heading tag. Numbers 1-6 can be used, with 'h1' being the highest level -->
