@@ -112,6 +112,26 @@
             margin: 0 auto;
         }
         
+        /* Style for the navigation menu */
+        nav ul {
+            list-style: none; 
+            text-align: center;
+            font-size: 30px;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
         
         /* Print Styles */
         @media print {
@@ -139,10 +159,17 @@
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <header>
-            <h1>About Me</h1>
-        </header>
         <section>
             <h2>Introduction</h2>
             <p>Hello! My name is Kevin Busseno, and I'm excited to share a little bit about myself with you.</p>
