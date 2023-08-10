@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is an example resume.">
+    <meta name="keywords" content="resume, jobs, career">
+    <title>John Doe Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Setting general body properties and applying the golden ratio for line-height */
+        body {
+            font-family: 'Helvetica', Arial;
+            margin: 0;
+            background-image: url('sky.jpg');
+            background-size: cover;
+            color: #000000;
+            font-size: 16px; /* Base font size */
+            line-height: 1.618; /* Line height following the golden ratio */
+        }
+
+        /* Applying the golden ratio for heading sizes */
+        h1 {
+            font-size: 2.618em; /* Font size following the golden ratio */
+
+        }
+        h2:after {
+            font-size: 1.618em; /* Font size following the golden ratio */
+            content:' ';
+            display:block;
+            border:2px solid #d0d0d0;
+            border-radius:4px;
+            -webkit-border-radius:4px;
+            -moz-border-radius:4px;
+            box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+            -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+            -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+        }
+        h3 {
+            font-size: 1em; /* Font size following the golden ratio */
+        }
+
+        /* Setting properties of the container and applying the golden ratio for width and padding */
+        .container {
+            width: 61.8%; /* Width following the golden ratio */
+            max-width: 1600px; /* Max-width for larger screens */
+            margin: 0 auto;
+            background-color: rgb(245,245,245);
+            opacity: .85;
+            padding: 1.618% 2.618%; /* Padding following the golden ratio */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border-radius: 25px;
+        }
+
+        /* Setting properties for header, main and footer sections */
+        header, main, footer {
+            padding: 0.618; /* Padding following the golden ratio */
+        }
+        
+       .tagline{
+            font-size: 1.618em;
+            color: #000000;
+            font-family: 'Helvetica', Arial;
+       }
+
+        p, li {
+            color: #000000;
+        }
+
+        /* Setting properties for links and applying the golden ratio for padding */
+        a {
+            color: #000000;
+            text-decoration: none;
+            padding: 0.618em 1em; /* Padding following the golden ratio */
+        }
+
+        /* Setting hover color for links */
+        a:hover {
+            color: #0077cc;
+        }
+
+        /* Styling for unordered lists */
+        ul {
+            list-style-type: none; 
+        }
+        
+        .skills{
+            column-count: 6;
+        }
+        
+        /* Styling for list items */
+        li:before {
+            content: "•"; /* Insert content that looks like bullets */
+            padding-right: 8px;
+            color: #000000;
+        }
+    
+        /* Styling for social links and applying the golden ratio for width */
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            width: 38.2%; /* Width following the golden ratio */
+            margin: 0 auto;
+        }
+
+        .personal-data{
+            display: flex;
+            justify-content: space-between;
+            width: 75%; /* Width following the golden ratio */
+            margin: 0 auto;
+        }
+        
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background-image: none;
+                color: black;
+            }
+            .container {
+                box-shadow: none;
+            }
+            a {
+                color: black;
+                text-decoration: underline;
+            }
+            a[href^="mailto:"]:after {
+                content: " (" attr(href) ")";
+            }
+            a[href^="tel:"]:after {
+                content: " (" attr(href) ")";
+            }
+            .print-link {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <section>
+            <h2>Introduction</h2>
+            <p>Hello! My name is Kevin Busseno, and I'm excited to share a little bit about myself with you.</p>
+        </section>
+        <section>
+            <h2>Background</h2>
+            <p>I come from Ringwood New Jersey, and I have a background in Business and Information Systems. I'm passionate about Coding.</p>
+        </section>
+        <section>
+            <h2>Experience</h2>
+            <p>Over the years, I've had the opportunity to work on robots, battlebots, and manage multiple websites. I gained valuable skills in SolidWorks, Inventor, Fusion 360, Java, Python, PHP, G-Code, MS Office, PowerPoint, Excel, Access, AutoCAD, Docs, Gmail, Drive, Sheets, WordPress. I'm always eager to learn and take on new challenges.</p>
+        </section>
+        <section>
+            <h2>Hobbies</h2>
+            <p>When I'm not working, I enjoy gaming, hiking, and I love to hangout with friends.. It's a great way for me to relax and unwind.</p>
+        </section>
+        <footer>
+            <div class="personal-data">
+                <p>John Doe © 2023</p>
+                <p><a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+                <p><a href="tel:+1234567890">123-456-7890</a></p>
+                <p>123 Main St, Anytown, USA</p>
+                <a href="#" class="print-link" onclick="window.print();return false;">Print this resume</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/johndoe"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/johndoe"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/johndoe"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
