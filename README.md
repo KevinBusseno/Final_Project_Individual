@@ -4,4 +4,4 @@ Figma Link: https://www.figma.com/file/D7Qq0Qp2zJwlXHgkP69vAL/Untitled?type=desi
 
 Website Link: https://kevinbusseno.github.io/Final_Project_Individual/
 
-Video Link: 
+Video Link: https://youtu.be/XYyx_DMGbiw
