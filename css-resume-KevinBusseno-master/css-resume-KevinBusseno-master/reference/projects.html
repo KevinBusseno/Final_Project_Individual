@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is an example resume.">
+        <meta name="keywords" content="resume, jobs, career">
+        <title>John Doe Resume</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+        <style>
+            /* Setting general body properties and applying the golden ratio for line-height */
+            body {
+                font-family: 'Helvetica', Arial;
+                margin: 0;
+                background-image: url('sky.jpg');
+                background-size: cover;
+                color: #000000;
+                font-size: 16px; /* Base font size */
+                line-height: 1.618; /* Line height following the golden ratio */
+            }
+    
+            /* Applying the golden ratio for heading sizes */
+            h1 {
+                font-size: 2.618em; /* Font size following the golden ratio */
+    
+            }
+            h2:after {
+                font-size: 1.618em; /* Font size following the golden ratio */
+                content:' ';
+                display:block;
+                border:2px solid #d0d0d0;
+                border-radius:4px;
+                -webkit-border-radius:4px;
+                -moz-border-radius:4px;
+                box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+                -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+                -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+            }
+            h3 {
+                font-size: 1em; /* Font size following the golden ratio */
+            }
+    
+            /* Setting properties of the container and applying the golden ratio for width and padding */
+            .container {
+                width: 61.8%; /* Width following the golden ratio */
+                max-width: 1600px; /* Max-width for larger screens */
+                margin: 0 auto;
+                background-color: rgb(245,245,245);
+                opacity: .85;
+                padding: 1.618% 2.618%; /* Padding following the golden ratio */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                margin-top: 40px;
+                margin-bottom: 40px;
+                border-radius: 25px;
+            }
+    
+            /* Setting properties for header, main and footer sections */
+            header, main, footer {
+                padding: 0.618; /* Padding following the golden ratio */
+            }
+            
+           .tagline{
+                font-size: 1.618em;
+                color: #000000;
+                font-family: 'Helvetica', Arial;
+           }
+    
+            p, li {
+                color: #000000;
+            }
+    
+            /* Setting properties for links and applying the golden ratio for padding */
+            a {
+                color: #000000;
+                text-decoration: none;
+                padding: 0.618em 1em; /* Padding following the golden ratio */
+            }
+    
+            /* Setting hover color for links */
+            a:hover {
+                color: #0077cc;
+            }
+    
+            /* Styling for unordered lists */
+            ul {
+                list-style-type: none; 
+            }
+            
+            .skills{
+                column-count: 6;
+            }
+            
+            /* Styling for list items */
+            li:before {
+                content: "•"; /* Insert content that looks like bullets */
+                padding-right: 8px;
+                color: #000000;
+            }
+        
+            /* Styling for social links and applying the golden ratio for width */
+            .social-links {
+                display: flex;
+                justify-content: space-between;
+                width: 38.2%; /* Width following the golden ratio */
+                margin: 0 auto;
+            }
+    
+            .personal-data{
+                display: flex;
+                justify-content: space-between;
+                width: 75%; /* Width following the golden ratio */
+                margin: 0 auto;
+            }
+            /* Style for the navigation menu */
+            nav ul {
+                list-style: none; 
+                text-align: center;
+                font-size: 30px;
+            }
+    
+            nav li {
+                display: inline;
+                margin-right: 20px;
+            }
+    
+            nav a {
+                color: black;
+                text-decoration: none;
+            }
+    
+            nav a:hover {
+                text-decoration: underline;
+            }
+            
+            
+            /* Print Styles */
+            @media print {
+                body {
+                    background-image: none;
+                    color: black;
+                }
+                .container {
+                    box-shadow: none;
+                }
+                a {
+                    color: black;
+                    text-decoration: underline;
+                }
+                a[href^="mailto:"]:after {
+                    content: " (" attr(href) ")";
+                }
+                a[href^="tel:"]:after {
+                    content: " (" attr(href) ")";
+                }
+                .print-link {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <div class="container">
+
+        <h1>My Projects</h1>
+        
+        <h2>Relevant Projects with Robotics</h2>
+        <ul>
+            <li>Captain of FRC Team 223</li>
+            <li>Founder and President of Rowan University Robotics Club</li>
+            <li>Created a Robot to solve a Rubik's Cube</li>
+            <li>Founder and CEO of an educational company that teaches students K-12 how to build, design, and code robots.</li>
+        </ul>
+        
+        <h2>Relevant Projects with Coding</h2>
+        <ul>
+            <li>Created an augmented reality face and body tracking in Python</li>
+            <li>Created my own personal website using HTML and CSS</li>
+            <li>Created a machine learning algorithm to play Flappy Bird in Python</li>
+            <li>Created my own personal assistant that uses voice recognition software to complete tasks such as:</li>
+            <ul>
+                <li>Play music</li>
+                <li>Open Software or Games</li>
+                <li>Tell me the time of day, month, year</li>
+                <li>Tell me the current weather outside</li>
+                <li>Open mailbox, websites, etc.</li>
+            </ul>
+        </ul>
+        <footer>
+            <div class="personal-data">
+                <p>John Doe © 2023</p>
+                <p><a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+                <p><a href="tel:+1234567890">123-456-7890</a></p>
+                <p>123 Main St, Anytown, USA</p>
+                <a href="#" class="print-link" onclick="window.print();return false;">Print this resume</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/johndoe"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/johndoe"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/johndoe"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+        
+</body>
+</html>
